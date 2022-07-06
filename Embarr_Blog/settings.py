@@ -60,7 +60,7 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4' 
 
 #To prevent 500 errors during login and registration
 ACCOUNT_EMAIL_VERIFICATION = 'none'
