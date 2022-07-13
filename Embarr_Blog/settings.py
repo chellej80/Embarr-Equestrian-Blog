@@ -27,11 +27,13 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-iuco5o%xbqov)hzebtdr53suqb$f1#wj9qip$@@^ax)lpiu(7p'
+#SECRET_KEY = 'django-insecure-iuco5o%xbqov)hzebtdr53suqb$f1#wj9qip$@@^ax)lpiu(7p'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+#needed to render the summernote editor
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ["embarr-blog.herokuapp.com", "localhost"]
